@@ -9,7 +9,7 @@
   --deepGreen: #657a00;
   --powerBlue: #1400c6;
 }
-/* styling every container */
+/* styling every container -------------------------- */
 .container {
     width: 100%;
     position: relative;
@@ -19,7 +19,7 @@
 .header {
   background-color: var(--deepGreen);
 }
-/* creating positioning classes */
+/* creating positioning classes -------------------------- */
 .centered {
   position: absolute;
   top: 50%;
@@ -38,7 +38,7 @@
   right: 16px;
 }
 
-/* header style */
+/* header style ---------------------------------------------------- */
 #big-header {
   animation: header-change 4s infinite alternate ease-in-out;
 
@@ -49,7 +49,7 @@
   animation: header-background-change 4s infinite alternate ease-in-out;
 }
 
-/* style for the navbar and elements */
+/* style for the navbar and elements -------------------------- */
 
 #nav-bar {
   position: sticky;
@@ -93,7 +93,7 @@ h3 {
   font-size: 30px;
 }
 
-/* style for the project elements */
+/* style for the project elements -------------------------- */
 .row {
     display: flex;
 }
@@ -109,30 +109,37 @@ h3 {
 img {
     width: 100%;
 }
-.footer {
-    
-}
+
+/* section dedicated to lining up the projects --------------------------*/
 .img-container {
   padding: 5%;
   height: 80%;
   width: 90%;
 }
-#projects-container {
-  border: 2px solid blue;
+.projects-container {
   text-align: center;
 }
-#projects-container h2 {
+.projects-container h2 {
   padding-top: 10px;
 }
-#projects-container h3 {
+.projects-container h3 {
   border-bottom: 3px solid black;
+  color: white;
 }
 .project-preview {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-/* animations  */
+
+/* style for the contact section -------------------------- */
+.contact-container {
+  width: 100%;
+  height: 500px;
+  background: yellow;
+}
+
+/* animations -------------------------- */
 @keyframes header-background-change {
   0%   {background-color: #ff002833;}
   50%  {background-color: #1400c633;}
@@ -148,11 +155,6 @@ img {
 @media only screen 
 and (min-width : 320px) {
   /* Styles */
-  
-  html {
-    
-  }
-  
   .row {
     flex-direction: column;
     justify-content: space-evenly;
