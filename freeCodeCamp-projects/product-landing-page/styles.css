@@ -1,0 +1,222 @@
+*,
+::before,
+::after {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+@media (max-width: 1224px) {
+/* Styles */
+  :root {
+    --bronze: #9C5705;
+    --silver: #B9B9B9;
+    --gold: #BC8502; 
+    --color1: #191936aa;
+    --color2: #009ce7aa;
+    --color3: #cefbfc;
+    --color4: #262639aa;
+    --color5: #0fcbfdaa;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+:root {
+  --bronze: #9C5705;
+  --silver: #B9B9B9;
+  --gold: #BC8502; 
+  --color1: #3d550caa;
+  --color2: #81b622aa;
+  --color3: #ecf87faa;
+  --color4: #59981aaa;
+  --color5: #d9ead3;
+}
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--color1);
+}
+body {
+  font-family: Verdana, serif;
+}
+
+header div {
+  width: 5vw;
+  height: 5vw;
+}
+#nav-bar {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+  
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* background-color: green; */
+}
+
+#nav-bar ul li {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#nav-bar > ul > li:hover {
+  background-color: #00000011;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #00000055;
+  position: sticky;
+  top:0;
+  z-index: 999;
+  background: var(--color5);
+}
+
+#header ul {
+  /* align-self: flex-end;
+  background-color: green; */
+}
+
+#header-img {
+  /* width: max(1vw, 18vw); */
+  width: 10vw;
+  aspect-ratio: 1 / 1;
+  padding: 0rem;
+} 
+
+.pricing {
+  /* border: 5px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  background-color: var(--color1);
+}
+.pricing .container {
+  /* border: 5px solid red; */
+  text-align: center;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: white;
+}
+.pricing .container h1 {
+  font-size: 4.0rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  text-align: center;
+}
+.container .product1 {
+  border: 5px solid var(--bronze);
+}
+.container .product2 {
+  border: 5px solid var(--silver);
+}
+.container .product3 {
+  border: 5px solid var(--gold);
+}
+
+.product1 h1 {
+  background-color: var(--bronze);
+}
+
+section > h1, section>h2, section>ul>li,section>button {
+  margin: 1.5rem;
+}
+.product2 h1 {
+  background-color: var(--silver);
+}
+.product3 h1 {
+  background-color: var(--gold);
+}
+.pricing h2 {
+  font-size: 2rem;
+}
+.pricing li {
+  font-size: 1.5rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.newsletter {
+  font-size: 2rem;
+  background-color: var(--color1);
+}
+.video {
+  background-color: var(--color5);
+  padding: 2rem 0 2rem 0;
+}
+.newsletter p, .newsletter input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.newsletter p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.fa-solid {
+  font-size: 8rem;
+  color: var(--color4);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
+
+}
+.features strong {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0 2rem 0 2rem;
+}
+.features p {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  background-color: var(--color3);
+}
+.features {
+  display: flex;
+  flex-direction: column;
+    background-color: var(--color2);
+
+}
+
+.pricing form {
+  padding: 1rem;
+}
+.pricing input {
+  font-size: 2rem;
+}
