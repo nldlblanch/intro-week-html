@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: 0;
 }
-
+:root {
+  --brightGreen: #beef00;
+  --electricRed: #ff0028;
+  --deepGreen: #657a00;
+  --powerBlue: #1400c6;
+}
 /* styling every container */
 .container {
     width: 100%;
@@ -11,7 +16,9 @@
     text-align: center;
     color: white;
   }
-
+.header {
+  background-color: var(--deepGreen);
+}
 /* creating positioning classes */
 .centered {
   position: absolute;
@@ -20,7 +27,7 @@
   transform: translate(-50%, -50%);
   }
 
-/* .top-left {
+.top-left {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -29,47 +36,70 @@
   position: relative;
   top: 8px;
   right: 16px;
-} */
+}
+
+/* header style */
+#big-header {
+  animation: header-change 4s infinite alternate ease-in-out;
+
+}
+
+#flashing-header {
+  width: 100%;
+  animation: header-background-change 4s infinite alternate ease-in-out;
+}
 
 /* style for the navbar and elements */
 
 #nav-bar {
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0%;
   width: 100%;
   height: 50px;
   list-style-type: none;
   overflow: hidden;
   background-color: black;
 }
-#nav-bar a {
+#nav-bar li a {
   text-decoration: none;
   color: white;
   display: block;
+  padding: 14px 16px;
+  text-align: center;
   width: 60px;
   height: 100%;
-  /* margin-right: 20px; */
 }
+
 #nav-bar li {
-  border: 1px solid yellow;
+  border-right: 1px solid grey;
   float: left;
+  height: 100%;
 }
 #nav-bar a:hover {
-  background-color: lightblue;
+  background-color: grey;
 }
-main {
-  padding: 50px 0;
-  
+
+#projects {
+  background-color: var(--deepGreen);
+}
+
+h2 {
+  font-size: 50px;
+  color: var(--brightGreen);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 30px;
 }
 
 /* style for the project elements */
 .row {
     display: flex;
-    border: 1px solid black;
 }
 
 .column {
-    border: 1px solid black;
+    border: 3px solid black;
 
 }
 .project {
@@ -82,17 +112,43 @@ img {
 .footer {
     
 }
+.img-container {
+  padding: 5%;
+  height: 80%;
+  width: 90%;
+}
+#projects-container {
+  border: 2px solid blue;
+  text-align: center;
+}
+#projects-container h2 {
+  padding-top: 10px;
+}
+#projects-container h3 {
+  border-bottom: 3px solid black;
+}
+.project-preview {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* animations  */
+@keyframes header-background-change {
+  0%   {background-color: #ff002833;}
+  50%  {background-color: #1400c633;}
+  100% {background-color: #beef0033;}
+}
+@keyframes header-change {
+  0%   {color: var(--electricRed);}
+  50%  {color: var(--powerBlue);}
+  100% {color: var(--brightGreen);}
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 320px) {
   /* Styles */
-  :root {
-    --brightGreen: #beef00;
-    --electricRed: #ff0028;
-    --deepGreen: #657a00;
-    --powerBlue: #1400c6;
-  }
+  
   html {
     
   }
@@ -117,7 +173,6 @@ and (min-width : 320px) {
   }
 
   header {
-    border: 2px solid red;
     font-size: 300%;
   }
   
@@ -128,7 +183,6 @@ and (min-width : 320px) {
 and (min-width : 768px) {
   /* Styles */
   html {
-    background-color: green;
   }
   .row {
     flex-direction: row;
@@ -140,6 +194,5 @@ and (min-width : 768px) {
 and (min-width : 1224px) {
   /* Styles */
   html {
-    background-color: red;
   }
 }
