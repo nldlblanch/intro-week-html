@@ -8,60 +8,62 @@
 </head>
 <body>
     <!-- Navbar (sit on top) -->
-    <a href="#bigHeader">This is a link to the header</a>
-    <a target="_blank" href="">This is a link to a new page</a>
-    <a target="_self" href="">This is a link on the same page</a>
-    <div class="grid-container">
+     
+        <!-- <div class="left">
+            <a class="home-button" href="#bigHeader">Home</a>
+        </div>
+        <div class="navbar">
+            <a target="_blank" href="#projects">Projects</a>
+            <a target="_self" href="#contact">Contact</a>
+        </div> -->
+        <ul id="nav-bar">
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+   
     <!-- Header -->
-    <div class="container">
-        <header class="header">
-            <img src="./img/sword-pull.jpg" alt="A photo of me pulling the sword from the stone"/>
-            <div class="centered">
-                <h1 id="bigHeader" >Hello.</h1>
-            </div>
-        </header>
-    </div>
+    <main>
+        <div class="container">
+            <header class="header">
+                <img src="./img/sword-pull.jpg" alt="A photo of me pulling the sword from the stone"/>
+                <div class="centered">
+                    <h1 id="bigHeader" >Hello.</h1>
+                </div>
+            </header>
+        </div>
     <!-- Page content -->
 
      <!-- Projects -->
-    <div id="projects" class="container">
-        <h3>Projects</h3>
-        <div class="row">
-            <div class="project column">
-                <h2 id="firstProject">Product Landing Page</h2>
-                <img src="./freeCodeCamp-projects/product-landing-page/img/Screenshot 2024-06-07 at 13.39.50.png"/>
-            </div>
-            <div class="project column">
-                <h2 id="secondProject">Project 2</h2>
-            </div>
-            <div class="project column">
-                <h2 id="thirdProject">Project 3</h2>
+        <div id="projects" class="container">
+            <h3>Projects</h3>
+            <div class="row">
+                <div class="project column">
+                    <h2 id="firstProject">Product Landing Page</h2>
+                    <img class="project-preview" src="./freeCodeCamp-projects/product-landing-page/img/Screenshot 2024-06-07 at 13.39.50.png"/>
+                </div>
+                <div class="project column">
+                    <h2 id="secondProject">Project 2</h2>
+                </div>
+                <div class="project column">
+                    <h2 id="thirdProject">Project 3</h2>
+                </div>
             </div>
         </div>
-    </div>
    
      <!-- Contact -->
-     <p>This is a paragraph</p>
+        <div class="container">
+            <form>
 
-    </div> <!-- end of grid container-->
+            </form>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <p>Say something about copyright?</p>
     </footer>
 
-    
-    
-    <ul>
-        <li>
-            This is an unordered list
-        </li>
-    </ul>
-    <ol>
-        <li>
-            This is an ordered list
-        </li>
-    </ol>
     
 </body>
 </html>

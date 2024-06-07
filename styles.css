@@ -3,21 +3,66 @@
     padding: 0;
     box-sizing: 0;
 }
-html {
-}
+
+/* styling every container */
 .container {
     width: 100%;
     position: relative;
     text-align: center;
     color: white;
   }
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+/* creating positioning classes */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 
+/* .top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.top-right {
+  position: relative;
+  top: 8px;
+  right: 16px;
+} */
+
+/* style for the navbar and elements */
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 60px;
+  height: 100%;
+  /* margin-right: 20px; */
+}
+#nav-bar li {
+  border: 1px solid yellow;
+  float: left;
+}
+#nav-bar a:hover {
+  background-color: lightblue;
+}
+main {
+  padding: 50px 0;
+  
+}
+
+/* style for the project elements */
 .row {
     display: flex;
     border: 1px solid black;
@@ -37,6 +82,7 @@ img {
 .footer {
     
 }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 320px) {
@@ -50,6 +96,7 @@ and (min-width : 320px) {
   html {
     
   }
+  
   .row {
     flex-direction: column;
     justify-content: space-evenly;
