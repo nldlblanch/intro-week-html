@@ -5,11 +5,21 @@
 }
 html {
 }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .header {
     background-color: beige;
     width: 100%;
     
-    font-size: 35px;
   }
 
 .row {
@@ -41,15 +51,11 @@ and (min-width : 320px) {
   html {
     background-color: blue;
   }
-  #bigHeader {
-    position: relative;
-    text-align: center;
-    top: -200px;
-    
-    /* transform: translate(0, -250%); */
-  }
+  
+  
   header {
     border: 2px solid red;
+    font-size: 300%;
   }
   
 }
