@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    border: 2px solid black;
 }
 html {
-    background-color: beige;
 }
 .header {
     background-color: beige;
@@ -16,16 +14,47 @@ html {
 
 .row {
     display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
 }
 
 .column {
     display: flex;
+    border: 1px solid black;
+
+}
+.project {
+    width: 300px;
+    height: 300px
 }
 
 .footer {
     
 }
-/* When screen size smaller, changes grid layout to stack top to bottom instead */
-@media (max-width: 600px) {
-    flex-direction: column;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) {
+  /* Styles */
+  html {
+    background-color: blue;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) {
+  /* Styles */
+  html {
+    background-color: green;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+  html {
+    background-color: red;
+  }
 }
